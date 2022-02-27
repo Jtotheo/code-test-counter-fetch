@@ -21,7 +21,7 @@ const useStyles = createUseStyles({
     alignItems: "center",
     "@media (max-width: 720px)": {
       width: "95%",
-      maxWidth: "100vw",
+      maxWidth: "95vw",
     },
   },
 
@@ -29,6 +29,9 @@ const useStyles = createUseStyles({
   normal: {
     height: "3rem",
     padding: "0 2rem",
+    "@media (max-width: 500px)": {
+      padding: "0 0.5rem",
+    },
     backgroundColor: "white",
     border: "2px solid black",
     borderRadius: "3rem",
@@ -43,6 +46,9 @@ const useStyles = createUseStyles({
   primary: {
     height: "3rem",
     padding: "0 2rem",
+    "@media (max-width: 500px)": {
+      padding: "0 0.5rem",
+    },
     backgroundColor: "hotpink",
     border: "none",
     borderRadius: "3rem",
