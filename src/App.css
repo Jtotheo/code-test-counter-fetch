@@ -1,38 +1,117 @@
+/* As this was my first encounter with JSS, I styled the components in this CSS-file first, so 
+I could focus on getting the syntactic format correct in the respective components, and not
+having to worry about the styling choices. If you are new to JSS, feel free to compare this file
+with the JSS-code segments in the components, however this file is not linked to any component.*/
+
+/* Remove browser styling */
 .App {
-  text-align: center;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Aligning content to center */
+.container {
+  width: 100vw;
+  max-width: 100%;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-direction: column;
+}
+.description {
+  width: 45rem;
+}
+/* Aligning buttons/counter div */
+.buttonsCounter {
+  margin: auto;
+  width: 28rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* style for "normal"/decrement button */
+.normal {
+  height: 3rem;
+  padding: 0 2rem;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 3rem;
+  color: black;
+}
+
+.normal:hover {
+  color: white;
+  background-color: black;
+}
+
+/* style for "primary"/decrement button */
+.primary {
+  height: 3rem;
+  padding: 0 2rem;
+  background-color: hotpink;
+  border: none;
+  border-radius: 3rem;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.primary:hover {
+  background-color: rebeccapurple;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Styling for the plus and minus signs */
+
+.plus,
+.minus {
+  font-size: 1.5rem;
+  margin-right: 10px;
+  font-weight: bold;
+}
+.minus {
+  position: relative;
+  bottom: 2px;
+}
+
+/* Aligning button text */
+
+.buttonText {
+  position: relative;
+  bottom: 4px;
+}
+
+/* Styling warning text */
+.warning {
+  border: solid 4px red;
+  text-align: center;
+  margin: 20px;
+  background-color: orange;
+  font-weight: bolder;
+  width: 80%;
+}
+
+/* Aligning info section */
+.infoSection {
+  width: 35rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.headerRepoInfo {
+  text-align: center;
+}
+
+.repoInfo {
+  margin-top: 0;
+  position: absolute;
+  top: 28rem;
+  width: 35rem;
+}
+/* styling for loader-component */
+.loader {
+  margin-top: 2rem;
+  border: solid 4px red;
+  text-align: center;
+  background-color: orange;
+  font-weight: bolder;
+  padding: 20px;
 }
