@@ -19,6 +19,10 @@ const useStyles = createUseStyles({
     display: "flex",
     justifyContent: "space-between",
     alignItems: "center",
+    "@media (max-width: 720px)": {
+      width: "95%",
+      maxWidth: "100vw",
+    },
   },
 
   /* Styling for "normal"/decrement button */

@@ -4,7 +4,11 @@ import { createUseStyles } from "react-jss";
 // JSS-styling
 const useStyles = createUseStyles({
   description: {
-    width: "45rem",
+    width: "60%",
+    "@media (max-width: 720px)": {
+      width: "95%",
+      maxWidth: "100vw",
+    },
   },
 });
 

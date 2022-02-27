@@ -14,8 +14,14 @@ const useStyles = createUseStyles({
   repoInfo: {
     marginTop: "0",
     position: "absolute",
-    top: "28rem",
+    top: "30rem",
     width: "35rem",
+    "@media (max-width: 720px)": {
+      width: "95%",
+      maxWidth: "100vw",
+      position: "absolute",
+      top: "35rem",
+    },
   },
 });
 
