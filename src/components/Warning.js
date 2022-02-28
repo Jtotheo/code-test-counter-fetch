@@ -7,10 +7,11 @@ const useStyles = createUseStyles({
   warning: {
     border: "solid 4px red",
     textAlign: "center",
-    margin: "20px",
+    margin: "auto",
+    marginTop: "20px",
     backgroundColor: "orange",
     fontWeight: "bolder",
-    width: "80%",
+    width: "60%",
   },
 });
 

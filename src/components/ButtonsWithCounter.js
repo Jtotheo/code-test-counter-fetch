@@ -80,11 +80,15 @@ const useStyles = createUseStyles({
     position: "relative",
     bottom: "4px",
   },
+
+  // Aligning infoSection-div
   infoSection: {
-    width: "35rem",
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "center",
+    width: "60%",
+    "@media (max-width: 720px)": {
+      width: "95%",
+      maxWidth: "100vw",
+    },
+    margin: "auto",
   },
 });
 

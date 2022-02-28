@@ -10,6 +10,8 @@ const useStyles = createUseStyles({
     backgroundColor: "orange",
     fontWeight: "bolder",
     padding: "20px",
+    margin: "auto",
+    width: "60%",
   },
 });
 
